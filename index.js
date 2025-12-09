@@ -21,12 +21,11 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://task-manager-full-stack-mu.vercel.app/api",
-      "https://task-manager-back-end-psi.vercel.app/",
+      "https://task-manager-back-end-ig3r.vercel.app/api",
+      "https://task-manager-back-end-ig3r.vercel.app/",
       "http://localhost:3000",
       "http://localhost:3001",
-      "http://localhost:5173",
-      "http://127.0.0.1:5173",
+
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
