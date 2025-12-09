@@ -29,7 +29,7 @@ app.use(
 
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
+    credentials: false,
   })
 );
 
