@@ -20,14 +20,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https: //task-manager-front-end-7brl.vercel.app/log-in",
-      "https: //task-manager-front-end-7brl.vercel.app/",
-      "http://localhost:3001",
-    ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
+     origin: 'https://task-manager-front-end-7brl.vercel.app', // Allow only your frontend origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'],
   })
 );
 
