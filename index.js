@@ -19,9 +19,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 app.use(
-  cors({
-     origin: 'https://task-manager-front-end-7brl.vercel.app' ,
-  })
+   origin: 'https://task-manager-front-end-7brl.vercel.app' 
 );
 
 app.use(express.json());
