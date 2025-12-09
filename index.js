@@ -18,26 +18,9 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-const allowedOrigins = [
-  "https://task-manager-front-end-7brl.vercel.app", // your frontend domain
-  "http://localhost:3000",
-  "http://localhost:3001"
-];
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
-);
-
+app.use(cors({
+  origin: '*'
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
