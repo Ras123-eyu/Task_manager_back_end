@@ -24,6 +24,7 @@ app.use(
       "https://task-manager-back-end-ig3r.vercel.app/api",
       "https://task-manager-back-end-ig3r.vercel.app/",
       "http://localhost:3000",
+    "https://task-manager-front-end-7brl.vercel.app/",
       "http://localhost:3001",
 
     ],
