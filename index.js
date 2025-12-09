@@ -26,6 +26,7 @@ app.use(
       "http://localhost:3000",
     "https://task-manager-front-end-7brl.vercel.app/",
       "http://localhost:3001",
+      "https://task-manager-back-end-ig3r.vercel.app/api/user/login",
 
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
