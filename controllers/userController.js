@@ -48,6 +48,7 @@ const registerUser = asyncHandler(async (req, res) => {
       .status(400)
       .json({ status: false, message: "Email address already exists" });
   }
+const isAdmin = role === "Admin" ? true : false;
 
   const user = await User.create({
     name,
