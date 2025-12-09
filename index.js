@@ -20,12 +20,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      true
-
-    ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: false,
+   origin: "https://task-manager-front-end-7brl.vercel.app", 
+    credentials: true, 
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], 
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
