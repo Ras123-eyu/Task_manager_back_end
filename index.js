@@ -22,8 +22,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https: //task-manager-front-end-7brl.vercel.app/log-in",
-      "https: //task-manager-front-end-7brl.vercel.app/",
+      "https://task-manager-front-end-7brl-d7kikz772-ras123-eyus-projects.vercel.app/log-in",
+      "https://task-manager-front-end-7brl-d7kikz772-ras123-eyus-projects.vercel.app/",
       "http://localhost:3001",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
