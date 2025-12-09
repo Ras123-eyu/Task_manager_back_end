@@ -18,8 +18,18 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-app.use(cors({ origin: false }));
-
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https: //task-manager-front-end-7brl.vercel.app/log-in",
+      "https: //task-manager-front-end-7brl.vercel.app/",
+      "http://localhost:3001",
+    ],
+    methods: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
