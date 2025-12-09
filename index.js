@@ -21,12 +21,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://task-manager-back-end-ig3r.vercel.app/api",
-      "https://task-manager-back-end-ig3r.vercel.app/",
-      "http://localhost:3000",
-    "https://task-manager-front-end-7brl.vercel.app/",
-      "http://localhost:3001",
-      "https://task-manager-back-end-ig3r.vercel.app/api/user/login",
+      true
 
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
