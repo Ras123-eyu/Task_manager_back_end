@@ -39,7 +39,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password, isAdmin, role, title } = req.body;
+  const { name, email, password, role, title } = req.body;
 
   const userExists = await User.findOne({ email });
 
@@ -48,7 +48,7 @@ const registerUser = asyncHandler(async (req, res) => {
       .status(400)
       .json({ status: false, message: "Email address already exists" });
   }
-isAdmin = role === "Admin" ? true : false;
+const isAdmin = role === "Admin" ? true : false;
 
   const user = await User.create({
     name,
